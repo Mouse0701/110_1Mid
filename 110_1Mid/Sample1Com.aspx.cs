@@ -12,7 +12,18 @@ namespace _110_1Mid {
             string number = Request.Form.Get("tb_Num");
             temp += Request.Form.Get("tb_Id") + "<br/>";
             temp += Request.Form.Get("tb_Ps") + "<br/>";
-            temp += Request.Form.Get("Cl_Inter") + "<br/>";
+            if (Request.Form.Get("Cl_Inter$0") != null)
+            {
+                temp += Request.Form.Get("Cl_Inter$0") + "<br/>";
+            }
+            if (Request.Form.Get("Cl_Inter$1") != null)
+            {
+                temp += Request.Form.Get("Cl_Inter$1") + "<br/>";
+            }
+            if (Request.Form.Get("Cl_Inter$2") != null)
+            {
+                temp += Request.Form.Get("Cl_Inter$2") + "<br/>";
+            }
             temp += Request.Form.Get("tb_Num") + "<br/>";
             temp += Request.Form.Get("HiddenField1") + "<br/>";
             temp += mt_2MD5(number);
